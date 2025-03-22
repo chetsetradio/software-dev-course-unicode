@@ -86,15 +86,18 @@ Assign the result to a variable named swappedString.
 //Starter Code
 // Task 1
 let inputString1 = "Code";
-let firstCodePoint; // Your code here
-let thirdCodePoint; // Your code here
+let firstCodePoint = inputString1.charCodeAt(0);
+let thirdCodePoint = inputString1.charCodeAt(2);
 
 // Task 2
-let wordFromCodePoints; // Your code here
+let codes = [72, 101, 108, 108];
+let wordFromCodePoints = String.fromCharCode(codes[0]) + String.fromCharCode(codes[1]) + String.fromCharCode(codes[2]) + String.fromCharCode(codes[3]);
 
 // Task 3
 let inputString2 = "Launch";
-let swappedString; // Your code here
+console.log(inputString2.charCodeAt(0));
+console.log(inputString2.charCodeAt(5));
+let swappedString = String.fromCharCode(104) + "aunc" + String.fromCharCode(76);
 
 // Log all results
 console.log({
@@ -103,3 +106,9 @@ console.log({
   wordFromCodePoints,
   swappedString,
 });
+
+
+// Just like in the practice coding exercise for the last lesson, I am confused as to what would be considered "complete" for this
+// practice. The practice on Canvas just says to do the 3 tasks listed, but this file begins with other exercises too -- 
+// that are from the lessons we went through. I hope it is okay that I just did the tasks following the instructions on the 
+// Canvas assignment. 
